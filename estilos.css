@@ -1,11 +1,109 @@
-header{background-color:aqua;}
-.primer_contenedor{background-color: blueviolet;}
-.segundo_contenedor{background-color: chartreuse;}
-.tercer_contenedor{background-color: brown;}
-.cuarto_contenedor{background-color: lightcoral;}
-.quinto_contenedor{background-color: royalblue;}
-.sexto_contenedor{background-color: yellow;}
+/* inicio de header */
+header {
+  background-color: aqua;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  background-color: tomato;
+  width: 2.813em;
+  height: 2.813em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+/* fin de header */
+
+/* inicio de primercontenerdor */
+.primer_contenedor {
+  background-image: url(img/portada.jpg);
+  background-position: 0%;
+  height: 90vh;
+}
+.redes_sociales button {
+  background-color: red;
+  color: aliceblue;
+}
+/* fin de primercontenedor */
+
+.segundo_contenedor {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.garabatos {
+  display: flex;
+  justify-content: space-around;
+  background-color: aquamarine;
+}
+.lineas_decorativas {
+  width: 16px;
+  height: 2px;
+  background-color: tomato;
+}
+.x {
+  color: tomato;
+}
+
+.servicios {
+  background-color: rgb(255, 165, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50em;
+  height: 25.688em;
+}
+.cosas {
+  background-color: gray;
+  width: 16.063em;
+  height: 12.25em;
+}
+
+.tercer_contenedor {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.tercer_contenedor .arriba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tercer_contenedor .abajo {
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+  height: 25.688em;
+}
 
 
-.redes_sociales button{background-color: red;
-color: aliceblue;}
+.tercer_contenedor .izquierda_tercer img{width: 300px;
+  height: 370px;}
+.tercer_contenedor .derecho_tercer {
+  width: 400px;
+  height: 380px;
+}
+
+.cuarto_contenedor {
+  background-color: lightcoral;
+  height: 100vh;
+}
+.quinto_contenedor {
+  background-color: royalblue;
+}
+.sexto_contenedor {
+  background-color: yellow;
+}
+.septimo_contenedor {
+  background-color: palevioletred;
+}
