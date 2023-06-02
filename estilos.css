@@ -128,7 +128,7 @@ font-size: 3em;}
   width: 10px;
   border-left: 1px dotted tomato;
 }
-.x::after {
+.x:after {
   content: '';
     height: 10px;
     left: -12px;
@@ -196,7 +196,7 @@ font-size: 3em;}
     padding: 0.2em 1em 0.2em 1em;
 }
 
-.derecho_tercer h1::after{
+.derecho_tercer h1:after{
   content: '';
     position: absolute;
     bottom: 0;
