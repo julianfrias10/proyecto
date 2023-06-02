@@ -111,16 +111,31 @@ font-size: 3em;}
 
 .garabatos {
   display: flex;
-  justify-content: space-around;
-  background-color: aquamarine;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+    width: 90px;
 }
 .lineas_decorativas {
-  width: 16px;
-  height: 2px;
-  background-color: tomato;
+  border-top: 1px dotted tomato;
+    width: 21px;
+    position: relative;
+    top: 6px;
+    left: -3px;
 }
-.x {
-  color: tomato;
+.x {rotate: 45deg;
+  height: 20px;
+  position: relative;
+  width: 10px;
+  border-left: 1px dotted tomato;
+}
+.x::after {
+  content: '';
+    height: 10px;
+    left: -12px;
+    position: absolute;
+    top: 0px;
+    width: 22px;
+    border-bottom: 1px dotted tomato;
 }
 
 .servicios {
@@ -133,9 +148,15 @@ font-size: 3em;}
 }
 .cosas {
   background-color: gray;
-  width: 16.063em;
-  height: 12.25em;
+    width: 16.063em;
+    height: 12.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+.cosas img[target=_celular]
+{top:1px;}
 
 .tercer_contenedor {
   background-color: brown;
@@ -165,6 +186,31 @@ font-size: 3em;}
   width: 400px;
   height: 380px;
 }
+.derecho_tercer h1{
+  position: relative;
+    color: white;
+    font-size: 37px;
+    border: 2px white;
+    border-style: solid;
+    width: 2em;
+    padding: 0.2em 1em 0.2em 1em;
+}
+
+.derecho_tercer h1::after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -11px;
+}
+
 
 .cuarto_contenedor {
   background-color: lightcoral;
